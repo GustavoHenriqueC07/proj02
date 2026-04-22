@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cafeteria </title>
+</head>
+
+    
+    <script src="./script.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #000000;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: black;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba (0,0,0,0.1);
+            text-align: center;
+            width: 300px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #0c365c;
+        }
+        button{
+            background: #4caf50;
+            color: #0c365c;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background: #45a049;
+        }
+        .resultado{
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+
+<div class=container>
+    <h2> Pedido </h2>
+
+    <input type="number" id="valor" placeholder="valor">
+
+    <input type="text" id="cartao" placeholder="cartao fidelidade (s/n)">
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div class="resultado" id="resultado"></div>
+
+</div>
+</body>
+</html>
